@@ -1,0 +1,14 @@
+bin
+lib
+types
+target
+compile
+public
+Cargo.lock
+Cargo.toml
+*.js
+!/src/**
+nodemon.json
+/src/lib/rust/crc/Cargo.lock
+/src/lib/rust/crc/.idea
+/src/lib/rust/crc/target

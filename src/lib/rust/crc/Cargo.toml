@@ -1,0 +1,17 @@
+[package]
+name = "crc"
+version = "1.0.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+crc32fast = "1.2.0"
+chrono = "0.4.31"
+
+[dependencies.neon]
+version = "0.10.1"
+default-features = false
+features = ["napi-latest", "promise-api"]
