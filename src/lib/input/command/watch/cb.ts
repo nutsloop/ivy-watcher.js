@@ -1,4 +1,4 @@
-import type { CallBackArgvData, CallBackAsync } from '@ivy-industries/input';
+import type { CallBackArgvData, CallBackAsync } from '@nutsloop/ivy-input';
 
 import { watcher, watcher_setting } from '../../../watcher/index.js';
 

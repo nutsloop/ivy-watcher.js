@@ -1,7 +1,7 @@
-import type { CLILogic, ParsedArgv } from '@ivy-industries/input';
+import type { CLILogic, ParsedArgv } from '@nutsloop/ivy-input';
 
 import { extends_proto } from '@ivy-industries/ansi';
-import { cli, run } from '@ivy-industries/input';
+import { cli, run } from '@nutsloop/ivy-input';
 
 import { definition } from './input/definition.js';
 extends_proto();

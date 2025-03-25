@@ -1,4 +1,4 @@
-import { set_cli_info_specification } from '@ivy-industries/input';
+import { set_cli_info_specification } from '@nutsloop/ivy-input';
 
 import { watch } from './command/watch/index.js';
 
@@ -10,12 +10,12 @@ export async function definition(): Promise<void> {
   // todo: set the global specification version for every commit
   set_cli_info_specification( {
     description: 'ivy watcher',
-    github: 'https://github.com/ivy-industries/watcher',
+    github: 'https://github.com/nutsloop/ivy-watcher.js',
     name: 'ivy-watcher',
-    npmjs: 'https://www.npmjs.com/package/@ivy-industries/watcher',
+    npmjs: 'https://www.npmjs.com/package/@nutsloop/ivy-watcher',
     usage: 'ivy-watcher <command> [--flag=[options]]',
-    version: '1.0.0-alpha.1',
-    website: 'https://watcher.ivy.run'
+    version: '1.0.1-alpha.1',
+    website: 'https://github.com/sponsors/nutsloop'
   } );
 
   await watch();

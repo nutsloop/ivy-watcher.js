@@ -1,11 +1,11 @@
 {
-  "name": "@ivy-industries/watcher",
-  "version": "1.0.0-alpha.1",
+  "name": "@nutsloop/ivy-watcher",
+  "version": "1.0.1-alpha.1",
   "license": "Apache-2.0",
   "description": "file watcher with rust binding",
   "type": "module",
   "engines": {
-    "node": "^21"
+    "node": ">=20.0.0"
   },
   "main": "index.js",
   "bin": {
@@ -33,10 +33,9 @@
     "move:rust:src": "./scripts/move-rust-src.sh",
     "build:rust:crc": "./scripts/build-rust-crc.sh",
     "clean": "./scripts/clean.sh",
-    "lint": "npx eslint . --ext .ts",
-    "lint-fix": "npx eslint . --fix --ext .ts",
+    "lint": "npx eslint .",
+    "lint-fix": "npx eslint . --fix",
     "tsc-watch": "npx tsc-watch --onSuccess \"sh -c 'chmod u+x ./bin/watcher.js && sh ./scripts/mv-rust-src.sh'\"",
-    "eslint-watch": "npx esw --watch . --ext .ts --fix",
     "ivy-watch": "bin/watcher.js watch --directory='public' --exclude='exclude.html,moved'",
     "update": "npx npm-check-updates -u"
   },
@@ -44,19 +43,19 @@
     "@ivy-industries/ansi": "^1.0.0-alpha.1",
     "@ivy-industries/async-import-meta-resolve": "^1.0.0-alpha.1",
     "@ivy-industries/cross-path": "^1.0.0-alpha.1",
-    "@ivy-industries/input": "^1.0.0-alpha.1",
-    "cargo-cp-artifact": "^0.1.8"
+    "@nutsloop/ivy-input": "^1.0.1-alpha.1",
+    "cargo-cp-artifact": "^0.1.9"
   },
   "devDependencies": {
-    "@types/node": "^20.12.7",
-    "@typescript-eslint/eslint-plugin": "^7.8.0",
-    "@typescript-eslint/parser": "^7.8.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-perfectionist": "^2.10.0",
-    "eslint-watch": "^8.0.0",
-    "npm-check-updates": "^16.14.20",
-    "tsc-watch": "^6.2.0",
-    "typescript": "^5.4.5"
+    "@eslint/js": "^9.23.0",
+    "@types/node": "^22.13.13",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "eslint-plugin-perfectionist": "^4.10.1",
+    "npm-check-updates": "^17.1.16",
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.8.2"
   },
   "keywords": [
     "watcher",
@@ -71,17 +70,17 @@
   "funding": [
     {
       "type": "github",
-      "url": "https://github.com/sponsors/ivy-industries"
+      "url": "https://github.com/sponsors/nutsloop"
     }
   ],
   "author": {
-    "name": "ivy-industries",
-    "email": "grow@ivy.run",
-    "url": "https://github.com/ivy-industries"
+    "name": "nutsloop",
+    "email": "nutsloop@proton.me",
+    "url": "https://github.com/nutsloop"
   },
-  "homepage": "https://github.com/ivy-industries/watcher#readme",
+  "homepage": "https://github.com/nutsloop/ivy-watcher.js#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivy-industries/watcher.git"
+    "url": "git+https://github.com/nutsloop/ivy-watcher.js.git"
   }
 }

@@ -1,4 +1,4 @@
-import { command, flag } from '@ivy-industries/input';
+import { command, flag } from '@nutsloop/ivy-input';
 
 import { watch_cb } from './cb.js';
 import { directory_cb } from './flag/directory/cb.js';

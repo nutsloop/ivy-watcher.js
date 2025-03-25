@@ -1,4 +1,4 @@
-import type { CallBackFlag } from '@ivy-industries/input';
+import type { CallBackFlag } from '@nutsloop/ivy-input';
 
 export const exclude_cb: CallBackFlag = ( cb_data: string[] ): string[] => {
 
