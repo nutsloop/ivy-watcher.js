@@ -1,4 +1,4 @@
-import { Path } from '@ivy-industries/cross-path';
+import { Path } from '@nutsloop/ivy-cross-path';
 import { readdir } from 'node:fs/promises';
 import { Worker } from 'node:worker_threads';
 

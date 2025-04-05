@@ -1,6 +1,6 @@
 {
   "name": "@nutsloop/ivy-watcher",
-  "version": "1.0.1-alpha.2",
+  "version": "1.0.1-alpha.3",
   "license": "Apache-2.0",
   "description": "file watcher with rust binding",
   "type": "module",
@@ -40,22 +40,22 @@
     "update": "npx npm-check-updates -u"
   },
   "dependencies": {
-    "@nutsloop/ivy-ansi": "^1.0.0-alpha.2",
+    "@nutsloop/ivy-ansi": "^1.0.0-alpha.3",
     "@nutsloop/ivy-async-import-meta-resolve": "^1.0.0-alpha.1",
-    "@nutsloop/ivy-cross-path": "^1.0.0-alpha.1",
-    "@nutsloop/ivy-input": "^1.0.1-alpha.1",
+    "@nutsloop/ivy-cross-path": "^1.0.0-alpha.2",
+    "@nutsloop/ivy-input": "^1.0.1-alpha.2",
     "cargo-cp-artifact": "^0.1.9"
   },
   "devDependencies": {
-    "@eslint/js": "^9.23.0",
-    "@types/node": "^22.13.13",
-    "@typescript-eslint/eslint-plugin": "^8.28.0",
-    "@typescript-eslint/parser": "^8.28.0",
-    "eslint": "^9.23.0",
-    "eslint-plugin-perfectionist": "^4.10.1",
+    "@eslint/js": "^9.24.0",
+    "@types/node": "^22.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-perfectionist": "^4.11.0",
     "npm-check-updates": "^17.1.16",
     "tsc-watch": "^6.2.1",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "keywords": [
     "watcher",

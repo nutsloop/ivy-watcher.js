@@ -1,5 +1,5 @@
-import { extends_proto } from '@ivy-industries/ansi';
-import { Path } from '@ivy-industries/cross-path';
+import { extends_proto } from '@nutsloop/ivy-ansi';
+import { Path } from '@nutsloop/ivy-cross-path';
 import { spawn } from 'node:child_process';
 import { cp } from 'node:fs/promises';
 
