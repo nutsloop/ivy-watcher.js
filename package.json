@@ -1,6 +1,6 @@
 {
   "name": "@nutsloop/ivy-watcher",
-  "version": "1.0.1-alpha.3",
+  "version": "1.1.0-alpha.0",
   "license": "Apache-2.0",
   "description": "file watcher with rust binding",
   "type": "module",
@@ -43,7 +43,7 @@
     "@nutsloop/ivy-ansi": "^1.0.0-alpha.3",
     "@nutsloop/ivy-async-import-meta-resolve": "^1.0.0-alpha.1",
     "@nutsloop/ivy-cross-path": "^1.0.0-alpha.2",
-    "@nutsloop/ivy-input": "^1.0.1-alpha.2",
+    "@nutsloop/ivy-input": "^1.1.0-alpha.0",
     "cargo-cp-artifact": "^0.1.9"
   },
   "devDependencies": {

@@ -14,7 +14,7 @@ export async function definition(): Promise<void> {
     name: 'ivy-watcher',
     npmjs: 'https://www.npmjs.com/package/@nutsloop/ivy-watcher',
     usage: 'ivy-watcher <command> [--flag=[options]]',
-    version: '1.0.1-alpha.1',
+    version: '1.1.0-alpha.0',
     website: 'https://github.com/sponsors/nutsloop'
   } );
 
