@@ -51,9 +51,9 @@ async function spawn_threads( path: string, exclude: string[] ): Promise<void>{
 
       if( ! exclude.includes( dirent.name ) ){
 
-        thread( `${ dirent.path }/${ dirent.name }`, exclude );
+        thread( `${ dirent.parentPath }/${ dirent.name }`, exclude );
 
-        await spawn_threads( `${ dirent.path }/${ dirent.name }`, exclude );
+        await spawn_threads( `${ dirent.parentPath }/${ dirent.name }`, exclude );
       }
     }
   }

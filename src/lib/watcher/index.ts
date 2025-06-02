@@ -280,11 +280,11 @@ async function integrity_refresh( path: string ): Promise<void>{
 
       if ( dirent.isDirectory() ) {
 
-        await integrity_refresh( `${ dirent.path }/${ dirent.name }` );
+        await integrity_refresh( `${ dirent.parentPath }/${ dirent.name }` );
       }
       else if ( dirent.isFile() && ! watcher_setting.get( 'exclude' ).includes( dirent.name ) ) {
 
-        const crc32 = await crc( `${ dirent.path }/${ dirent.name }`, true, true, true )
+        const crc32 = await crc( `${ dirent.parentPath }/${ dirent.name }`, true, true, true )
           .catch( ( error: Error ) => {
             throw error;
           } );

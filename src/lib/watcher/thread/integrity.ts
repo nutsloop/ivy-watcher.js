@@ -81,11 +81,11 @@ async function compute( path: string ): Promise<void>{
 
       if ( dirent.isDirectory() ) {
 
-        await compute( `${ dirent.path }/${ dirent.name }` );
+        await compute( `${ dirent.parentPath }/${ dirent.name }` );
       }
       else if ( dirent.isFile() && ! excluded.includes( dirent.name ) ) {
 
-        const crc32 = await crc( `${ dirent.path }/${ dirent.name }`, true, true, true )
+        const crc32 = await crc( `${ dirent.parentPath }/${ dirent.name }`, true, true, true )
           .catch( ( error: Error ) => {
             throw error;
           } );
